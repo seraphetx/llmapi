@@ -1,0 +1,23 @@
+name = "llm-api-proxy"
+main = "src/index.py"
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "llm-api-proxy"
+
+[[d1_databases]]
+binding = "qdb"
+database_name = "qdb"
+database_id = "your-d1-database-id"
+
+[vars]
+SITE_URL = "https://your-site.com"
+SITE_NAME = "AI API Proxy"
+
+# Python相关配置
+[build]
+command = ""
+
+# 确保包含所有必要的文件
+[site]
+bucket = "./dist"
