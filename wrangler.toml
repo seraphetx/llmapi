@@ -1,9 +1,10 @@
-name = "llm-api-proxy"
+# wrangler.toml
+name = 'llapi'
 main = "src/index.py"
 compatibility_date = "2024-01-01"
 
 [env.production]
-name = "llm-api-proxy"
+name = "llapi"
 
 [[d1_databases]]
 binding = "qdb"
